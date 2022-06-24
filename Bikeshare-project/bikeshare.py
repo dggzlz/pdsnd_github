@@ -95,16 +95,16 @@ def time_stats(df):
     start_time = time.time()
 
     # TO DO: display the most common month
-    most_common_month = df['month'].mode()[0]
+    common_month = df['month'].mode()[0]
     print('most common month:', most_common_month)
 
     # TO DO: display the most common day of week
-    most_common_day_of_week = df['day_of_week'].mode()[0]
+    common_day_of_week = df['day_of_week'].mode()[0]
     print('most common day of week:', most_common_day_of_week)
 
     # TO DO: display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
-    most_common_hour = df['hour'].mode()[0]
+    common_hour = df['hour'].mode()[0]
     
     print('most common hour:', most_common_hour)
 
@@ -120,15 +120,15 @@ def station_stats(df):
     start_time = time.time()
 
     # TO DO: display most commonly used start station
-    most_common_start_station = df['Start Station'].mode()[0]
+    start_station = df['Start Station'].mode()[0]
     print('most commonly used start station:', most_common_start_station)
 
     # TO DO: display most commonly used end station
-    most_common_end_station = df['End Station'].mode()[0]
+    common_end_station = df['End Station'].mode()[0]
     print('most commonly used end station:', most_common_end_station)
 
     # TO DO: display most frequent combination of start station and end station trip
-    most_frequent_start_end = ('From ' + df['Start Station'] + ' to ' + df['End Station']).mode()[0]
+    frequent_start_end = ('From ' + df['Start Station'] + ' to ' + df['End Station']).mode()[0]
     print('most frequent combination of start and end station trip:', most_frequent_start_end)
 
 
@@ -179,10 +179,10 @@ def user_stats(df):
         earliest_year = int(df['Birth Year'].min())
         print('Earliest year of Birth:', earliest_year)
         
-        most_recent_year = int(df['Birth Year'].max())
+        recent_year = int(df['Birth Year'].max())
         print('Most recent year of birth:', most_recent_year)
         
-        most_common_year = int(df['Birth Year'].mean())
+        common_year = int(df['Birth Year'].mean())
         print('Most common year of Birth:', most_common_year)
 
     else:
