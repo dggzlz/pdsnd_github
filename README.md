@@ -11,8 +11,8 @@ This project focuses in the bikeshare data in the cities of New York City, Chica
 
 ### Files used
 The files used for this project are:
-chicago.csv
-washington.csv
+chicago.csv,
+washington.csv,
 new_york_city.csv
 
 
