@@ -104,7 +104,7 @@ def time_stats(df):
 
     # TO DO: display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
-    most_common_hour = df['hour'].mode()[0]
+    common_hour = df['hour'].mode()[0]
     
     print('most common hour:', most_common_hour)
 
